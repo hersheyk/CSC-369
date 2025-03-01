@@ -1,0 +1,5 @@
+The dataset consists of 38 TSV files containing Amazon product reviews across various categories. Each file includes the following columns: marketplace, customer_id, review_id, product_id, product_parent, product_title, product_category, star_rating, helpful_votes, total_votes, vine, verified_purchase, review_headline, review_body, and review_date. 
+
+There were several rows in which there were 22 columns read in instead of 15, but due to the sheer amount of data I simply dropped those rows. I asked the data to inform me which lines these were on in case I chose to return to them for further analysis. No other major issues were found with column structure. The TSV files were read correctly using Pandas, and all expected columns were present. 
+
+These TSV files were sorted into different product categories such as mobile apps, sports equipment, software, toys, books, and more. I read in each TSV file separately and saved them to a google folder so that I could select individual files to analyze. Running all at once ran into RAM errors, so I ran these in batches. There were
